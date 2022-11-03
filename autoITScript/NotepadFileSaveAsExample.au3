@@ -1,0 +1,7 @@
+Run("notepad.exe")
+WinActive("Untitled-Notepad")
+WinMenuSelectItem("Untitled - Notepad","","&File","&Save")
+WinActive("Save As")
+ControlFocus("Save As","","Edit1")
+ControlSend("Save As","","Edit1","demon2.txt")
+ControlClick("Save As","&Save","Button2")
